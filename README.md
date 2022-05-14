@@ -1,3 +1,28 @@
+# Project Trivia 
+
+## Installation & COnfiguration
+
+The project Trivia is a full stack application with a backend in python flask and a front-end in React.
+
+### Backend
+
+The [backend](./backend/README.md) directory contains a partially completed Flask and SQLAlchemy server. You will work primarily in `__init__.py` to define your endpoints and can reference models.py for DB and SQLAlchemy setup. These are the files you'd want to edit in the backend:
+
+1. `backend/flaskr/__init__.py`
+2. `backend/test_flaskr.py`
+
+> View the [Backend README](./backend/README.md) for more details about installation and configuration.
+
+### Frontend
+
+The [frontend](./frontend/README.md) directory contains a complete React frontend to consume the data from the Flask server. If you have prior experience building a frontend application, you should feel free to edit the endpoints as you see fit for the backend you design. If you do not have prior experience building a frontend application, you should read through the frontend code before starting and make notes regarding:
+
+1. What are the end points and HTTP methods the frontend is expecting to consume?
+2. How are the requests from the frontend formatted? Are they expecting certain parameters or payloads?
+
+
+> View the [Frontend README](./frontend/README.md) for more details.
+
 ## API Documentation
 
 ### Getting Started
