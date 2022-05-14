@@ -146,7 +146,7 @@ You can optionally update this game play to increase the number of questions or 
 
 - Deletes a specified question using the id of the question
 - Request Arguments: `id` - integer
-- Returns: Does not need to return anything besides the appropriate HTTP status code. Optionally can return the id of the question. If you are able to modify the frontend, you can have it remove the question using the id instead of refetching the questions.
+- Returns: Does not need to return anything besides the appropriate HTTP status code. Optionally can return the id of the question. If you are able to modify the frontend, you can have it remove the question using the id instead of refetching the questions. 
 
 ---
 
