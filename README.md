@@ -1,9 +1,9 @@
 ## API Documentation
 
 ### Getting Started
-- Host: At present this app can only be run locally, The backend app is hosted at the default, `http://127.0.0.1:5000/`, which is set as a proxy in the frontend configuration. 
-- Base URL:  The base URL for the backend is  __/api/v1__. 
-- Authentication: This version of the application does not require authentication or API keys. 
+- __Host:__ At present this app can only be run locally, The backend app is hosted at the default, `http://127.0.0.1:5000/`, which is set as a proxy in the frontend configuration. 
+- __Base URL:__  The base URL for the backend is  __/api/v1__. 
+- ___Authentication:__ This version of the application does not require authentication or API keys. 
 
 ### Error Handling
 Errors are returned as JSON objects in the following format:

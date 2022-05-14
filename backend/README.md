@@ -38,8 +38,17 @@ psql trivia < trivia.psql
 
 ### Run the Server
 
-From within the `./src` directory first ensure you are working using your created virtual environment.
+- Activate your virtualEnv
+```
+python3 -m venv venv
 
+```
+- Export your environnement variable FLASK_APP, FLASK_ENV and DB_URL
+```
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+export DB_URL="postgresql://postgres:Pa553R@localhost:5432/trivia"
+```
 To run the server, execute:
 
 ```bash
