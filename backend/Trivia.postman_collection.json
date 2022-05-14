@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "d5bae1e3-eefb-4e81-909d-dbe61c396bf9",
+		"name": "Trivia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 - Get Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}{{base_url}}/categories",
+					"host": [
+						"{{host}}{{base_url}}"
+					],
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1 - Get Categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}{{base_url}}/categories",
+							"host": [
+								"{{host}}{{base_url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "173"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "GET, POST, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 14 May 2022 03:51:04 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"categories\": {\n        \"1\": \"Science\",\n        \"2\": \"Art\",\n        \"3\": \"Geography\",\n        \"4\": \"History\",\n        \"5\": \"Entertainment\",\n        \"6\": \"Sports\"\n    },\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "2 - Get questions by category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}{{base_url}}/categories/35/questions",
+					"host": [
+						"{{host}}{{base_url}}"
+					],
+					"path": [
+						"categories",
+						"35",
+						"questions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "2 - Get questions by category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}{{base_url}}/categories/4/questions",
+							"host": [
+								"{{host}}{{base_url}}"
+							],
+							"path": [
+								"categories",
+								"4",
+								"questions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "824"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "GET, POST, PATCH, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.7.9"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 14 May 2022 03:51:17 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"current_category\": \"History\",\n    \"questions\": [\n        {\n            \"answer\": \"Maya Angelou\",\n            \"category\": 4,\n            \"difficulty\": 2,\n            \"id\": 5,\n            \"question\": \"Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?\"\n        },\n        {\n            \"answer\": \"Muhammad Ali\",\n            \"category\": 4,\n            \"difficulty\": 1,\n            \"id\": 9,\n            \"question\": \"What boxer's original name is Cassius Clay?\"\n        },\n        {\n            \"answer\": \"George Washington Carver\",\n            \"category\": 4,\n            \"difficulty\": 2,\n            \"id\": 12,\n            \"question\": \"Who invented Peanut Butter?\"\n        },\n        {\n            \"answer\": \"Scarab\",\n            \"category\": 4,\n            \"difficulty\": 4,\n            \"id\": 23,\n            \"question\": \"Which dung beetle was worshipped by the ancient Egyptians?\"\n        }\n    ],\n    \"success\": true,\n    \"total_questions\": 4\n}"
+				}
+			]
+		},
+		{
+			"name": "3 - Get Questions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}{{base_url}}/questions?page=2",
+					"host": [
+						"{{host}}{{base_url}}"
+					],
+					"path": [
+						"questions"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Create question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"question\": \"Heres a Another Amother question string\",\n    \"answer\": \"Heres a new answer string\",\n    \"difficulty\": 1,\n    \"category\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}{{base_url}}/questions",
+					"host": [
+						"{{host}}{{base_url}}"
+					],
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 - Search question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"searchTerm\": \"Hematology\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}{{base_url}}/questions",
+					"host": [
+						"{{host}}{{base_url}}"
+					],
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - Delete question",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}{{base_url}}/questions/28",
+					"host": [
+						"{{host}}{{base_url}}"
+					],
+					"path": [
+						"questions",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - Quizzes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"previous_questions\": [22, 21],\n    \"quiz_category\": {\n        \"id\": 1,\n        \"type\": \"Science\"\n    }\n }"
+				},
+				"url": {
+					"raw": "{{host}}{{base_url}}/quizzes",
+					"host": [
+						"{{host}}{{base_url}}"
+					],
+					"path": [
+						"quizzes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "base_url",
+			"value": "/api/v1",
+			"type": "string"
+		}
+	]
+}
