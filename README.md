@@ -1,6 +1,6 @@
 # Project Trivia 
 
-## Installation & COnfiguration
+## Installation & Configuration
 
 The project Trivia is a full stack application with a backend in python flask and a front-end in React.
 
